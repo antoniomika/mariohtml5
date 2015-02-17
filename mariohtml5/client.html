@@ -5,7 +5,7 @@
         <script src="/socket.io/socket.io.js"></script>
     </head>
     <script>
-        var socket = io('http://10.51.73.129:3000');
+        var socket = io(window.location.href.replace("client", ""));
         // Position Variables
         var x = 0;
         var y = 0;

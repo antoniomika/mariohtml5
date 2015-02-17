@@ -89,7 +89,7 @@
 			}
 
 			$(document).ready(function() { new Enjine.Application().Initialize(new Mario.LoadingState(), 320, 240) });
-			var socket = io('http://10.51.73.129:3000');
+			var socket = io(window.location.href);
 			socket.on("motionData", function(data) {
 				console.log(data);
 				var ax = Math.floor(data.ax);

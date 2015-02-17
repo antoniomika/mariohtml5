@@ -1,6 +1,12 @@
 {
+  "name": "MarioClient",
+  "version": "0.0.1",
+  "private": false,
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
-    "express": "4.x.x",
-    "socket.io": "1.x.x"
+    "express": "*",
+    "socket.io": "*"
   }
 }
